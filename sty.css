@@ -177,16 +177,30 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #004080; /* Changes color when you hover */
 }
+/* --- 1. DEFAULT MOBILE STYLES (Applies to everyone) --- */
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
 
-@media (max-width: 600px) {
+table, form {
+  width: 100%;
+}
 
-    table,
-    form {
-        width: 100%;
-    }
+nav a {
+  display: block;
+  margin: 5px;
+}
 
-    nav a {
-        display: block;
-        margin: 5px;
-    }
+/* --- 2. TABLET & DESKTOP STYLES (Applies only to 768px and wider) --- */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
