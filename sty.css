@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+
+}
+
+/*header*/
+header,
+nav {
+    background-color: rgb(13, 79, 49);
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+
+/*nav*/
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(42, 96, 44);
+
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+
+table {
+    width: 70%;
+    margin: auto;
+    background: white;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+/* Hover effect for rows [cite: 17] */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+th {
+    background-color: rgb(168, 165, 165);
+    color: black;
+}
+
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+    footer {
+        background-color: rgb(42, 96, 44);;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+        font-size:0.7rem;
+        width: 100%;
+        font-weight: bold;
+    }
+/* Center the contact content */
+.contact-container {
+    display: flex;/* Flexbox for centering */
+    flex-direction: column;/* Stack items vertically */
+    align-items: center;/* Center horizontally */
+}
+
+/* Icon group styling */
+.contact-icons {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #002b5b;
+}
+
+/* Rounded Form Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Makes them rounded like the picture */
+    background-color: #fff;
+}
+
+/* The Blue Submit Button */
+.submit-btn {
+    background-color: #002b5b;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;/* Pointer cursor on hover */
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Hover effect for button [cite: 17] */
+.submit-btn:hover {
+    background-color: #004080;
+}
+/* Form Container */
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 500px; /* Keeps the form from getting too wide */
+    margin: 0 auto;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #002b5b;
+}
+
+/* Rounded Inputs and Textarea */
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners as requested */
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Blue Submit Button */
+button[type="submit"] {
+    background-color: #002b5b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004080; /* Changes color when you hover */
+}
+
+@media (max-width: 600px) {
+
+    table,
+    form {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+}
